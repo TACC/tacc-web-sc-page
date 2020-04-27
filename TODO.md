@@ -1,22 +1,19 @@
-# TACC Website Content - To Do List
+# SC19 - To Do List
 
-## Documentation
+## Architecture
 
-1. Move some `README.md` content to Confluence:
-    - Move `README.md` "TACC Website Content - Markup Templating": "Setup" to Confluence as a basic intro to a Node project.
+1. Organize styles and templates.
 
 ## Styles
 
-1. Fix redundant styles for `<abbr>` tag:
-    ```css
-    /* TODO: Add this to global CSS */
-    /* FAQ: The global CSS styles this with a border bottom,
-            but neglects to remove browsers' dotted underline style
-            (has style: Firefox, Chrome…; no style: Safari…) */
-    abbr[title] { text-decoration: none; }
-    ```
+1. Move "COMPONENTS" styles to stylesheet that is loaded by CMS for only the SC19 page.
+2. Abstract `sc19-read-more` component into a "main" stylesheet.
+3. Use `autoprefixer` (see `COMPONENTS: SC19 "Read More": Show/Hide Solution #3`).
 
-## Content
+## Templates
 
-1. For EPIC pages, replace abbreviations for CS with the words computer science.
-1. For EPIC pages, use abbreviations and/or links for project/partner names.
+1. Change markup for `h2 > time` (CMS extracts the `<time>`).
+2. Use functions for time and date",
+    1. Convert `.json` to `.js` (`modules.exports = { … }`).
+    2. Create functions to output time, date (see https://github.com/janl/mustache.js/#functions).
+    3. If you want to use `toLocaleDateString` or `toLocaleTimeString`, see https://stackoverflow.com/a/47808440.
