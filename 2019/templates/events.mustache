@@ -5,14 +5,14 @@
 	{{^is_column}}
 	<div>
 	{{/is_column}}
-		<h2 class="sc19-content__sub-title">
+		<h2 class="sc-content__sub-title">
 			{{date}}
 		</h2>
-		<hr class="sc19-content__sub-title-decoration" />
+		<hr class="sc-content__sub-title-decoration" />
 	{{#events}}
-		<article class="sc19-event">
+		<article class="sc-event">
 			<!-- FAQ: Not using <h3> because it has too much too unstyle -->
-			<strong class="sc19-event__title">
+			<strong class="sc-event__title">
 			{{#url}}
 				<a href="{{url}}" target="_blank">{{title}}</a>
 			{{/url}}
@@ -20,7 +20,7 @@
 				{{title}}
 			{{/url}}
 			</strong>
-			<dl class="sc19-event__data">
+			<dl class="sc-event__data">
 				{{#leader}}
 				<dt>{{leader.type}}</dt>
 					<dd>{{leader.name}}</dd>
@@ -51,13 +51,13 @@
 				{{/warning}}
 			</dl>
 			{{#description}}
-			<div class="sc19-read-more--solution-3">
+			<div class="sc-read-more--solution-3">
 				<!-- WARN: Titles may have characters prohibitted in `id` attribute -->
-				<input class="sc19-read-more__state" id="{{title}}--{{time_start-iso}}" type="checkbox" />
-				<p class="sc19-event__desc sc19-read-more__target">{{description}}</p>
-				<label class="sc19-read-more__toggle" for="{{title}}--{{time_start-iso}}">
-					<span class="sc19-read-more__on-text">Read more</span>
-					<span class="sc19-read-more__off-text">Show less</span>
+				<input class="sc-read-more__state" id="{{title}}--{{time_start-iso}}" type="checkbox" />
+				<p class="sc-event__desc sc-read-more__target">{{description}}</p>
+				<label class="sc-read-more__toggle" for="{{title}}--{{time_start-iso}}">
+					<span class="sc-read-more__on-text">Read more</span>
+					<span class="sc-read-more__off-text">Show less</span>
 				</label>
 			</div>
 			{{/description}}
