@@ -5,7 +5,7 @@ scripts:
   # Build temporary partial templates, then build final markup
   build: nps build:2019 build:2020
   build:2019: nps build:2019:partials build:2019:markup
-  build:2020: echo 'No 2020 templates nor assets, yet.'
+  build:2020: nps build:2020:partials build:2020:markup
 
   # Build each temporary partial
     # WARNING: Do not put temporary partials in `./dist`, because
@@ -16,6 +16,8 @@ scripts:
   build:2019:partials: nps
     build:2019:partials:events:booth
     build:2019:partials:events:conf
+  build:2020:partials: nps
+    build:2020:partials:events:conf
     # Via Mustache (`mustache`) apply data (`….json`)
     # into template (`….mustache`) to make partial (`….mustache`)
   build:2019:partials:events:booth: >-
@@ -26,6 +28,10 @@ scripts:
     mustache
     ./2019/assets/events.conf.json ./2019/templates/events.mustache
     ./2019/templates/partials/_events.conf.mustache
+  build:2020:partials:events:conf: >-
+    mustache
+    ./2020/assets/events.conf.json ./2020/templates/events.mustache
+    ./2020/templates/partials/_events.conf.mustache
 
   # Build final markup
     # Import partial template(s) (`-p ….mustache`)
@@ -37,10 +43,17 @@ scripts:
     -p ./2019/templates/partials/_events.booth.mustache
     -p ./2019/templates/partials/_events.conf.mustache
     -p ./2019/templates/partials/social-media.mustache
-    ./2019/assets/events.booth.json ./2019/templates/index.mustache >
+    ./assets/empty.json ./2019/templates/index.mustache >
     ./dist/2019.html
+  build:2020:markup: >-
+    mustache
+    -p ./2020/templates/partials/styles.mustache
+    -p ./2020/templates/partials/_events.conf.mustache
+    -p ./2020/templates/partials/social-media.mustache
+    ./assets/empty.json ./2020/templates/index.mustache >
+    ./dist/2020.html
 
-  report: echo "Copy relevant markup from './dist/output.html'"
+  report: echo "Copy relevant markup from './dist/'"
 
   # Delete temporary files
   clean: rm -f ./**/_*.*
