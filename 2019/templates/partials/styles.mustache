@@ -184,18 +184,18 @@
          and these page-specific styles __below__ should not need IDs;
          but, am not allowed to edit global styles, yet;
          so, we need to artifically scope these styles */
-#sc {
+#sc-wrap {
     background-color: #0e0520;
     padding: 0px 25px 30px 25px;
 }
-#sc dl {
+#sc-wrap dl {
     margin-left: 0; /* override `…/main.css` */
 }
-#sc dd,
-#sc dt {
+#sc-wrap dd,
+#sc-wrap dt {
     line-height: 1.5; /* override `tacc-new-theme/css/main.css`; match `body` */
 }
-#sc dd {
+#sc-wrap dd {
     margin-left: 0; /* override `html/css/main.css` *//* match `tacc-new-theme/css/main.css` */
 }
 
