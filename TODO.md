@@ -2,7 +2,7 @@
 
 ## Architecture
 
-1. Organize styles and templates.
+1. Support multiple years/outputs.
 
 ## Styles
 

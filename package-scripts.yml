@@ -14,22 +14,29 @@ scripts:
   build:partials: nps build:partials:events:booth build:partials:events:conf
     # Via Mustache (`mustache`) apply data (`….json`)
     # into template (`….mustache`) to make partial (`….mustache`)
-  build:partials:events:booth: mustache ./events.booth.json ./events.mustache ./_events.booth.mustache
-  build:partials:events:conf: mustache ./events.conf.json ./events.mustache ./_events.conf.mustache
+  build:partials:events:booth: >-
+    mustache
+    ./assets/events.booth.json ./templates/events.mustache
+    ./templates/partials/_events.booth.mustache
+  build:partials:events:conf: >-
+    mustache
+    ./assets/events.conf.json ./templates/events.mustache
+    ./templates/partials/_events.conf.mustache
 
   # Build final markup
     # Import partial template(s) (`-p ….mustache`)
     # Apply data into template, then ouput to… (`….json ….mustache >`)
     # Final markup file (`….html`)
-  build:markup: mustache
-    -p ./styles.mustache
-    -p ./_events.booth.mustache
-    -p ./_events.conf.mustache
-    -p ./social-media.mustache
-    ./events.booth.json ./body.mustache >
+  build:markup: >-
+    mustache
+    -p ./templates/partials/styles.mustache
+    -p ./templates/partials/_events.booth.mustache
+    -p ./templates/partials/_events.conf.mustache
+    -p ./templates/partials/social-media.mustache
+    ./assets/events.booth.json ./templates/body.mustache >
     ./dist/output.html
 
   report: echo "Copy relevant markup from './dist/output.html'"
 
   # Delete temporary files
-  clean: rm ./_*.*
+  clean: rm ./templates/partials/_*.*
