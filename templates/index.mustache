@@ -14,6 +14,11 @@
 				</div>
 			</section>
 			{{/booth}}
+			{{^booth}}
+			<!-- No primary section, this year, because no booth -->
+			<!-- IDEA: Make the `--secondary` sections `--primary` (requires grander header) -->
+			<!--<section class="sc-content sc-content--primary" id="sc-booth-events">…</section>-->
+			{{/booth}}
 			<div class="row">
 				<div class="col-md-8">
 					{{#conf}}
