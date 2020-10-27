@@ -1,0 +1,161 @@
+{
+	"days": [ {
+		"date": "November 5–9, 2020",
+		"date-iso": "2020-11-5/9",
+		"events": [ {
+			"type": "External",
+			"url": "http://hackhpc.org/hpc/",
+			"title": "HPC in the City Hackathon",
+			"speakers": {
+				"type": "Led by",
+				"names": [ "Jeaime Powell, TACC" ]
+			},
+			"date": "Thursday, 5—9 November 2020",
+			"date-iso": "2020-11-5/9"
+		} ]
+	}, {
+		"date": "November 8–11, 2020",
+		"date-iso": "2020-11-8/11",
+		"events": [ {
+			"url": "https://studentclustercompetition.us/2020/Teams/Team09/index.html",
+			"type": "External",
+			"title": "Student Cluster Competition (virtual)",
+			"organization": {
+				"type": "Team",
+				"name": "Cloud CloUT, University of Texas at Austin"
+			},
+			"leader": {
+				"type": "Team Mentor",
+				"name": "Jose Garcia, TACC"
+			},
+			"speakers": {
+				"type": "Team Members",
+				"names": [ "Evan Chang, Electrical and Computer Engineering", " Juan Paez, Electrical and Computer Engineering", " Nicholas Aufiero, Computational Engineering", " Kelly Conlon, Computational Engineering", " Brock Davis, Computer Science", " Jack Gaither, Computer Vision and Image Understanding, University of Arkansas" ]
+			},
+			"date": "Thursday, 5—9 November 2020",
+			"date-iso": "2020-11-5/9"
+		} ]
+	}, {
+		"date": "Thursday, November 9",
+		"date-iso": "2020-11-9",
+		"events": [ {
+			"type": "Tutorial",
+			"url": " https://sc20.supercomputing.org/presentation/?id=tut138&sess=sess255",
+			"title": "Tutorial: Tools and Best Practices for Distributed Deep Learning on Supercomputer",
+			"speakers": {
+				"type": "Presenters",
+				"names": [ "Weijia Xu, TACC", "Zhao Zhang, TACC", "David Walling, TACC" ]
+			},
+			"date": "Thursday, 5—9 November 2020",
+			"date-iso": "2020-11-5/9",
+			"time_start": "2:30pm",
+			"time_start-iso": "14:30-05:00",
+			"time_end": "6:30pm",
+			"time_end-iso": "18:30-05:00"
+		} ]
+	}, {
+		"date": "Thursday, November 11",
+		"date-iso": "2020-11-11",
+		"events": [ {
+			"type": "Workshop",
+			"url": "https://sc20.supercomputing.org/session/?sess=sess199",
+			"title": "Workshop: The 5th Deep Learning on Supercomputers Workshop",
+			"speakers": {
+				"type": "Session Chairs",
+				"names": [ "Valeriu Codreanu, SURFsara", "Ian Foster, ANL-University of Chicago", "Zhao Zhang, TACC" ]
+			},
+			"date": "Thursday, 11 November 2020",
+			"date-iso": "2020-11-11",
+			"time_start": "10:00pm",
+			"time_start-iso": "10:00-05:00",
+			"time_end": "6:30pm",
+			"time_end-iso": "18:30-05:00"
+		}, {
+			"type": "Workshop",
+			"url": "https://sc20.supercomputing.org/session/?sess=sess200 ",
+			"title": "Workshop: Best Practices for HPC Training and Education",
+			"speakers": {
+				"type": "Session Chairs",
+				"names": [ "Nia Alexandrov, Hartree Centre, STFC", "Scott Lathrop, Shodor Education Foundation, University of Illlinois", "Nitin Sukhija, Slippery Rock University of Pennsylvania" ]
+			},
+			"date": "Thursday, 11 November 2020",
+			"date-iso": "2020-11-11",
+			"time_start": "10:00pm",
+			"time_start-iso": "10:00-05:00",
+			"time_end": "6:30pm",
+			"time_end-iso": "18:30-05:00"
+		} ]
+	}, {
+		"date": "Thursday, November 13",
+		"date-iso": "2020-11-13",
+		"events": [ {
+			"type": "Paper",
+			"url": "",
+			"title": "Paper: Application Performance in the Frontera Acceptance Process",
+			"context": "Workshop: HPCSYSPROS20",
+			"context_url": "http://sighpc-syspros.org/workshops/2020/",
+			"speakers": {
+				"type": "Author",
+				"names": [ "Richard Todd Evans" ]
+			},
+			"date": "Thursday, 5—9 November 2020",
+			"date-iso": "2020-11-13",
+			"time_start": "11:50pm",
+			"time_start-iso": "11:50-05:00",
+			"time_end": "12:10pm",
+			"time_end-iso": "12:10-05:00"
+		} ]
+	}, {
+		"date": "Thursday, November 18",
+		"date-iso": "2020-11-9",
+		"events": [ {
+			"type": "Posters",
+			"url": "https://sc20.supercomputing.org/presentation/?id=svs107&sess=sess283",
+			"title": "Visualizing Usage on HPC Systems",
+			"speakers": {
+				"type": "Presenters",
+				"names": [ "Andrew Solis", "Gregory Foss", "Matias Frogoso", "Paul Navratil" ]
+			},
+			"date": "Thursday, 18 November 2020",
+			"date-iso": "2020-11-18",
+			"time_start": "1:25pm",
+			"time_start-iso": "13:25-05:00",
+			"time_end": "1:38pm",
+			"time_end-iso": "18:38-05:00"
+		}, {
+			"type": "Posters",
+			"url": "https://sc20.supercomputing.org/presentation/?id=svs103&sess=sess283",
+			"title": "Scientific Visualization of Antarctica Ice Sheet and Southern Ocean Evolution",
+			"context": "Session: Scientific Visualization and Data Analytics Showcase",
+			"context_url": "https://sc20.supercomputing.org/session/?sess=sess283",
+			"speakers": {
+				"type": "TACC Authors",
+				"names": [ "Francesca Samsel", "Greg Abram" ]
+			},
+			"date": "Thursday, 18 November 2020",
+			"date-iso": "2020-11-18",
+			"time_start": "1:51pm",
+			"time_start-iso": "13:51-05:00",
+			"time_end": "2:24pm",
+			"time_end-iso": "14:24-05:00"
+		} ]
+	}, {
+		"date": "Thursday, November 19",
+		"date-iso": "2020-11-9",
+		"events": [ {
+			"type": "Paper",
+			"url": "https://sc20.supercomputing.org/presentation/?id=pap216&sess=sess178",
+			"title": "Paper: Convolutional Neural Network Training with Distributed K-FAC on 19th",
+			"speakers": {
+				"type": "Authors",
+				"names": [ "J. Gregory Pauloski", "Zhao Zhang", "Lei Huang", "Weijia Xu", "Ian T. Foster" ]
+			},
+			"date": "Thursday, 5—9 November 2020",
+			"date-iso": "2020-11-5/9",
+			"time_start": "1:00pm",
+			"time_start-iso": "13:00-05:00",
+			"time_end": "1:30pm",
+			"time_end-iso": "13:30-05:00"
+		} ]
+	} ]
+}

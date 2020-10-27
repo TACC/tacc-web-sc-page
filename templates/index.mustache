@@ -1,0 +1,37 @@
+<!--open styles-->
+{{> _styles}}
+<!--close styles-->
+	<div id="sc-wrap" class="t-2019">
+		<!-- WARNING: `#sc` and `.container` __must not__ be together, because `#sc` sets wide background color (without reliance on variable containers) and `.container` restricts content width. -->
+		<div class="container">
+			{{#booth}}
+			<section class="sc-content sc-content--primary" id="sc-booth-events">
+				<h1 class="sc-content__title">{{booth}}</h1>
+				<div class="row">
+					<!--open booth-events-->
+					{{> _events.booth}}
+					<!--close booth-events-->
+				</div>
+			</section>
+			{{/booth}}
+			<div class="row">
+				<div class="col-md-8">
+					{{#conf}}
+					<section class="sc-content sc-content--secondary" id="sc-conf-events">
+						<h1 class="sc-content__title">{{conf}}</h1>
+						<!--open conf-events-->
+						{{> _events.conf}}
+						<!--close conf-events-->
+					</section>
+					{{/conf}}
+				</div>
+				<div class="col-md-4">
+					<section class="sc-content sc-content--secondary" id="sc-social_media">
+						<!--open social-media-->
+						{{> social-media}}
+						<!--close social-media-->
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>

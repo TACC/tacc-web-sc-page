@@ -1,0 +1,82 @@
+<style type="text/css" id="style--sc-components">
+/* SC CONTENT */
+.sc-content {
+    background-color: #FFF;
+    margin: 0px;
+    padding: 20px;
+}
+.sc-content__title {
+    margin: 0px;
+    padding: 0px;
+}
+.sc-content__sub-title {
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+}
+/* FAQ: We should decorate the `…__title`, but only brittle CSS can do that;
+        so, we continue to use an `<hr />` (common on TACC, circa 2019) */
+.sc-content__sub-title-decoration {
+    margin: 3px 0px 15px 0px;
+    padding: 0px;
+}
+.sc-content--primary .sc-content__title     { font-size: 2.5em; }
+.sc-content--primary .sc-content__sub-title { font-size: 1.75em; }
+.sc-content--secondary .sc-content__title     { font-size: 2em; }
+.sc-content--secondary .sc-content__sub-title { font-size: 1.5em; }
+
+
+
+/* SC EVENT */
+.sc-event + .sc-event {
+    margin-top: 20px;
+}
+/* SEE: https://stackoverflow.com/a/21261303 */
+/* NOTE: Flexbox considered, but this is less code */
+/* WARN: ITCSS: This should be "TRUMPS: Scope" code (`.s-`),
+                but do not implement Namepsaces until team is on board. */
+.sc-event__data,
+.sc-event__desc {
+    margin-bottom: 10px; /* redundant for `p.sc-event__desc` */
+}
+.sc-event__sub-title {
+    display: block;
+}
+
+/* SC EVENT: Data */
+.sc-event__data dt {
+    display: inline-block;
+}
+.sc-event__data dt {
+    font-weight: 500;
+}
+.sc-event__data dt:after {
+    display: inline-block;
+    content: ':';
+    margin-right: 1ch;
+}
+.sc-event__data dd {
+    display: inline;
+}
+.sc-event__data dd:after {
+    display: block;
+    content: '';
+}
+.sc-event__data dd ul:not(.has-commas) li::after { content: ", "; }
+.sc-event__data dd ul.has-commas li::after { content: "; "; }
+.sc-event__data dd li:last-of-type::after {
+    display: none;
+}
+.sc-event__data p {
+    display: inline;
+}
+
+
+
+/* SC MEDIA */
+.sc-media + .sc-media {
+    margin-top: 30px;
+}
+.sc-media .sc-media__title {
+    margin-bottom: 15px;
+}
+</style>

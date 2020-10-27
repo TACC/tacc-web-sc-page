@@ -1,0 +1,36 @@
+<style type="text/css" id="style--sc-trumps">
+/* HACKS */
+
+/* Resolve whitespace in a simpler manner than `/sc18` failed to do */
+/* WARN: There are two `#main-content`'s! (bug origin: clone `/sc18`) */
+/* HACK: We should instead only have one `#main-content`! */
+#main-content {
+    padding-bottom: 0;
+}
+/* Avoids adding more superfluous `.row` and `.col-…` divs */
+/* HACK: If we changed Bootstrap (a big "if"), then this value would be wrong */
+#sc-booth-events {
+    margin-bottom: 30px; /* replicate `.col-… { margin-*: 15px; }` pair */
+}
+
+
+
+/* PAGE-SPECIFIC */
+/* NOTE: These page-specific styles should not need IDs;
+         but, we are not allowed to edit global styles, yet;
+         so, we need to artifically scope these styles */
+#sc-wrap {
+    background-color: #0e0520;
+    padding: 0px 25px 30px 25px;
+}
+#sc-wrap dl {
+    margin-left: 0; /* override `…/main.css` */
+}
+#sc-wrap dd,
+#sc-wrap dt {
+    line-height: 1.5; /* override `tacc-new-theme/css/main.css`; match `body` */
+}
+#sc-wrap dd {
+    margin-left: 0; /* override `html/css/main.css` *//* match `tacc-new-theme/css/main.css` */
+}
+</style>

@@ -1,0 +1,94 @@
+<style type="text/css" id="style--sc-components--read-more">
+/* SC "READ MORE" */
+/* .sc-read-more {} *//* Noop, but adheres to BEM naming practice */
+.sc-read-more__state { display: none; }
+/* RFE: Should we use <a> and `:target` (universal question)?
+        - Pro: [Accessibility] user focus can move to text
+        - Meh: [Architecture] no need to copy link color nor add link class
+        - Con: [User Experience] scroll may be distracting
+*/
+/* SEE: https://justmarkup.com/articles/2017-01-12-truncating-and-revealing-text-the-show-more-and-read-more-patterns/#using-%3Atarget */
+.sc-read-more__on-text,
+.sc-read-more__off-text { display: none; }
+.sc-read-more__state:not(:checked) ~ .sc-read-more__toggle .sc-read-more__on-text,
+.sc-read-more__state:checked ~ .sc-read-more__toggle .sc-read-more__off-text { display: block; }
+.sc-read-more__toggle {
+    font-size: 0.85em;
+
+    cursor: pointer;
+    color: #4f71db; /* from `a … { color: #4f71db }` */
+}
+
+/* SC "READ MORE": Show/Hide Solution #1:
+    - Pro: [Performance] CSS-only (no JavaScript)
+    - Con: [UI / Design] Only supports one line
+*/
+.sc-read-more--solution-1 .sc-read-more__target {
+	/* height: calc( 1.6em * 2 ); *//* from `body { line-height: 1.6em; }` */
+
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.sc-read-more--solution-1 .sc-read-more__state:checked ~ .sc-read-more__target {
+    overflow: visible; /* In case revealed content has floating content */
+	white-space: normal;
+}
+
+/* SC "READ MORE": Show/Hide Solution #2:
+    - Pro: [Performance] CSS-only (no JavaScript)
+    - Con: [Localization] Ellipses is hard-coded
+*/
+.sc-read-more--solution-2 .sc-read-more__target {
+	max-height: calc( 1.6em * 3 ); /* from `body { line-height: 1.6em; }` */
+	overflow: hidden;
+    position: relative; /* for absolutely-positioned children */
+}
+.sc-read-more--solution-2 .sc-read-more__state:checked ~ .sc-read-more__target {
+    max-height: inherit;
+    overflow: visible; /* In case revealed content has floating content */
+}
+.sc-read-more--solution-2 .sc-read-more__target::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.6em; /* from `body { line-height: 1.6em; }` */
+    background-image: linear-gradient( 0deg, white 12.5%, transparent );
+}
+.sc-read-more--solution-2 .sc-read-more__state:checked ~ .sc-read-more__target::after {
+    display: none;
+}
+.sc-read-more--solution-2 .sc-read-more__target::before {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    content: "…";
+    bottom: 0;
+    right: 0;
+	width: calc( 1.6em * 2 ); /* from `body { line-height: 1.6em; }` */
+    height: 1.6em; /* from `body { line-height: 1.6em; }` */
+    text-align: right;
+    background-image: linear-gradient( 270deg, white 50%, transparent );
+    padding-right: 0.4em;
+}
+.sc-read-more--solution-2 .sc-read-more__state:checked ~ .sc-read-more__target::before {
+    display: none;
+}
+
+/* SC "READ MORE": Show/Hide Solution #3:
+    - Pro: [Performance] CSS-only (no JavaScript)
+    - Con: [Degradation] Fallback is non-functional links
+*/
+/* RFE: Use `autoprefixer`; if not, this _could_ break after several years */
+.sc-read-more--solution-3 .sc-read-more__target {
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.sc-read-more--solution-3 .sc-read-more__state:checked ~ .sc-read-more__target {
+    -webkit-line-clamp: inherit;
+}
+</style>
