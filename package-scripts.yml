@@ -16,9 +16,8 @@ scripts:
   build:styles: >-
     cat
     ./templates/partials/styles/components.mustache
-    ./templates/partials/styles/components.read-more.mustache
     ./templates/partials/styles/trumps.mustache
-    > ./templates/partials/_styles.mustache
+    > ./templates/partials/styles/_common.mustache
 
   # Build each temporary partial
     # WARNING: Do not put temporary partials in `./dist`, because
@@ -29,10 +28,15 @@ scripts:
   build:2019:partials: nps
     build:2019:partials:events:booth
     build:2019:partials:events:conf
+    build:2019:partials:styles
+    build:2019:partials:social
   build:2020:partials: nps
     build:2020:partials:events:conf
+    build:2020:partials:styles
+    build:2020:partials:social
     # Via Mustache (`mustache`) apply data (`….json`)
     # into template (`….mustache`) to make partial (`….mustache`)
+
   build:2019:partials:events:booth: >-
     mustache
     ./assets/2019/events.booth.json ./templates/events.mustache
@@ -41,10 +45,30 @@ scripts:
     mustache
     ./assets/2019/events.conf.json ./templates/events.mustache
     ./templates/partials/_events.conf.mustache
+  build:2019:partials:styles: >-
+    cat
+    ./templates/partials/styles/_common.mustache
+    ./templates/partials/styles/components.read-more.mustache
+    ./templates/partials/styles.2019.mustache
+    > ./templates/partials/_styles.mustache
+  build:2019:partials:social: >-
+    cp
+    ./templates/partials/social-media.2019.mustache
+    ./templates/partials/_social-media.mustache
+
   build:2020:partials:events:conf: >-
     mustache
     ./assets/2020/events.conf.json ./templates/events.mustache
     ./templates/partials/_events.conf.mustache
+  build:2020:partials:styles: >-
+    cat
+    ./templates/partials/styles/_common.mustache
+    ./templates/partials/styles.2020.mustache
+    > ./templates/partials/_styles.mustache
+  build:2020:partials:social: >-
+    cp
+    ./templates/partials/social-media.2020.mustache
+    ./templates/partials/_social-media.mustache
 
   # Build final markup
     # Import partial template(s) (`-p ….mustache`)
@@ -55,18 +79,18 @@ scripts:
     -p ./templates/partials/_styles.mustache
     -p ./templates/partials/_events.booth.mustache
     -p ./templates/partials/_events.conf.mustache
-    -p ./templates/partials/social-media.mustache
+    -p ./templates/partials/_social-media.mustache
     ./assets/2019/index.json ./templates/index.mustache >
     ./dist/2019.html
   build:2020:markup: >-
     mustache
     -p ./templates/partials/_styles.mustache
     -p ./templates/partials/_events.conf.mustache
-    -p ./templates/partials/social-media.mustache
+    -p ./templates/partials/_social-media.mustache
     ./assets/2020/index.json ./templates/index.mustache >
     ./dist/2020.html
 
   report: echo "Copy relevant markup from './dist/'"
 
   # Delete temporary files
-  clean: rm -f ./templates/partials/_*
+  clean: echo 'dirty' # rm -f ./templates/partials/_*
