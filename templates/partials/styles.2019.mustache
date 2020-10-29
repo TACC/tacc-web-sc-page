@@ -14,4 +14,9 @@
 .t-2019 .sc-event__data dd li {
     display: inline;
 }
+.t-2019 .sc-event__data dd ul:not(.has-commas) li::after { content: ", "; }
+.t-2019 .sc-event__data dd ul.has-commas li::after { content: "; "; }
+.t-2019 .sc-event__data dd li:last-of-type::after {
+    display: none;
+}
 </style>

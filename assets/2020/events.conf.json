@@ -109,6 +109,22 @@
 		"date": "Thursday, November 18",
 		"date-iso": "2020-11-9",
 		"events": [ {
+			"type": "Exhibitor",
+			"url": "https://sc20.supercomputing.org/presentation/?id=exforum119&sess=sess326",
+			"title": "SOLAR Consortium: Accelerated Ray Tracing for Scientific Simulations",
+			"context": "Session: HPC Visualization and Portals",
+			"context_url": "https://sc20.supercomputing.org/session/?sess=sess283",
+			"speakers": {
+				"type": "Presenters",
+				"names": [ "Paul Navratil", "Estelle Dirand", "Hannah Ross", "Pascal Grosset", "Christiaan Gribble", "Peter Messmer, Jeff Amstutz" ]
+			},
+			"date": "Thursday, 18 November 2020",
+			"date-iso": "2020-11-18",
+			"time_start": "10:00am",
+			"time_start-iso": "10:00-05:00",
+			"time_end": "10:30am",
+			"time_end-iso": "10:30-05:00"
+		}, {
 			"type": "Posters",
 			"url": "https://sc20.supercomputing.org/presentation/?id=svs107&sess=sess283",
 			"title": "Visualizing Usage on HPC Systems",
@@ -145,7 +161,7 @@
 		"events": [ {
 			"type": "Paper",
 			"url": "https://sc20.supercomputing.org/presentation/?id=pap216&sess=sess178",
-			"title": "Paper: Convolutional Neural Network Training with Distributed K-FAC on 19th",
+			"title": "Paper: Convolutional Neural Network Training with Distributed K-FAC",
 			"speakers": {
 				"type": "Authors",
 				"names": [ "J. Gregory Pauloski", "Zhao Zhang", "Lei Huang", "Weijia Xu", "Ian T. Foster" ]
