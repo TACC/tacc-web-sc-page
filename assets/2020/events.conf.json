@@ -38,13 +38,30 @@
 		"date-iso": "2020-11-9",
 		"events": [ {
 			"type": "Tutorial",
-			"url": " https://sc20.supercomputing.org/presentation/?id=tut138&sess=sess255",
+			"url": "https://sc20.supercomputing.org/presentation/?id=tut138&sess=sess255",
 			"title": "Tutorial: Tools and Best Practices for Distributed Deep Learning on Supercomputer",
 			"speakers": {
 				"type": "Presenters",
 				"names": [ "Weijia Xu, TACC", "Zhao Zhang, TACC", "David Walling, TACC" ]
 			},
 			"date-iso": "2020-11-9",
+			"time_start": "2:30pm",
+			"time_start-iso": "14:30-05:00",
+			"time_end": "6:30pm",
+			"time_end-iso": "18:30-05:00"
+		} ]
+	}, {
+		"date": "Tuesday, November 10",
+		"date-iso": "2020-11-10",
+		"events": [ {
+			"type": "Tutorial",
+			"url": "https://sc20.supercomputing.org/presentation/?sess=sess279&id=tut150#038;id=tut150",
+			"title": "Tutorial: Programming and Profiling Modern Multicore Processors",
+			"speakers": {
+				"type": "Presenters",
+				"names": [ "Amit Ruhela", "Si Liu", "Victor Eijkhout", "Chun-Yaung Lu", "Lars Koesterke" ]
+			},
+			"date-iso": "2020-11-10",
 			"time_start": "2:30pm",
 			"time_start-iso": "14:30-05:00",
 			"time_end": "6:30pm",
@@ -98,6 +115,38 @@
 			"time_start-iso": "11:50-05:00",
 			"time_end": "12:10pm",
 			"time_end-iso": "12:10-05:00"
+		} ]
+	}, {
+		"date": "Tuesday, November 17",
+		"date-iso": "2020-11-17",
+		"events": [ {
+			"type": "State of Practice Talk",
+			"url": "https://sc20.supercomputing.org/presentation/?id=sotp120&sess=sess289",
+			"title": "State-of-Practice: Containerization on Petascale HPC Clusters",
+			"context": "In State of the Practice Reports of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC’20), 2020",
+			"speakers": {
+				"type": "Authors",
+				"names": [ "Amit Ruhela", "Matthew Vaughn", "Stephen Harrell", "Gregory Zynda", "John Fonner", "Richard Todd Evans", "Tommy Minyard" ]
+			},
+			"date-iso": "2020-11-17",
+			"time_start": "1:00pm",
+			"time_start-iso": "13:00-05:00",
+			"time_end": "1:30pm",
+			"time_end-iso": "13:30-05:00"
+		}, {
+			"type": "Paper",
+			"url": "https://sc20.supercomputing.org/presentation/?sess=sess161&id=pap540",
+			"title": "Conference Paper: A Hierarchical and Load-Aware Design for Large Message Neighborhood Collectives",
+			"context": "In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC’20)",
+			"speakers": {
+				"type": "Authors",
+				"names": [ "S. Mahdieh Ghazimirsaeed", "Qinghua Zhou", "Amit Ruhela", "Mohammadreza Bayatpour", "Hari Subramoni", "Dhabaleswar K. (DK) Panda" ]
+			},
+			"date-iso": "2020-11-17",
+			"time_start": "3:00pm",
+			"time_start-iso": "15:00-05:00",
+			"time_end": "3:30pm",
+			"time_end-iso": "15:30-05:00"
 		} ]
 	}, {
 		"date": "Wednesday, November 18",
