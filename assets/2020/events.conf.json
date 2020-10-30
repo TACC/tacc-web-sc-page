@@ -261,10 +261,10 @@
 		"date": "Thursday, November 19",
 		"date-iso": "2020-11-19",
 		"events": [ {
-			"should_prefix_title": true,
+			"should_prefix_title": false,
 			"type": "Paper",
 			"url": "https://sc20.supercomputing.org/presentation/?id=pap216&sess=sess178",
-			"title": "Convolutional Neural Network Training with Distributed K-FAC",
+			"title": "Conference Paper: Convolutional Neural Network Training with Distributed K-FAC",
 			"speakers": {
 				"type": "Authors",
 				"names": [ "J. Gregory Pauloski", "Zhao Zhang", "Lei Huang", "Weijia Xu", "Ian T. Foster" ]
