@@ -12,33 +12,20 @@
 	{{#events}}
 		<article class="sc-event">
 			<!-- FAQ: Not using <h3> because it has too much to unstyle -->
-			<strong class="sc-event__title">
-			{{#url}}
-				<a href="{{{url}}}" target="_blank">{{title}}</a>
-			{{/url}}
-			{{^url}}
-				{{title}}
-			{{/url}}
-			</strong>
+			<strong class="sc-event__title">{{#url}}<a href="{{{url}}}" target="_blank">{{> title}}</a>{{/url}}{{^url}}{{> title}}{{/url}}</strong>
 
 			{{#context}}
 			<p class="sc-event__sub-title">
 				{{#context_url}}
 					{{#url}}
-				<span>
-					{{context}}
-				</span>
+				<span>{{context}}</span>
 					{{/url}}
 					{{^url}}
-				<a href="{{{context_url}}}" target="_blank">
-					{{context}}
-				</a>
+				<a href="{{{context_url}}}" target="_blank">{{context}}</a>
 					{{/url}}
 				{{/context_url}}
 				{{^context_url}}
-				<span>
-					{{context}}
-				</span>
+				<span>{{context}}</span>
 				{{/context_url}}
 			</p>
 			{{/context}}

@@ -39,10 +39,12 @@ scripts:
 
   build:2019:partials:events:booth: >-
     mustache
+    -p ./templates/partials/title.mustache
     ./assets/2019/events.booth.json ./templates/events.mustache
     ./templates/partials/_events.booth.mustache
   build:2019:partials:events:conf: >-
     mustache
+    -p ./templates/partials/title.mustache
     ./assets/2019/events.conf.json ./templates/events.mustache
     ./templates/partials/_events.conf.mustache
   build:2019:partials:styles: >-
@@ -58,6 +60,7 @@ scripts:
 
   build:2020:partials:events:conf: >-
     mustache
+    -p ./templates/partials/title.mustache
     ./assets/2020/events.conf.json ./templates/events.mustache
     ./templates/partials/_events.conf.mustache
   build:2020:partials:styles: >-
