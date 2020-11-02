@@ -70,10 +70,11 @@
 				"names": [ "Weijia Xu, TACC", "Zhao Zhang, TACC", "David Walling, TACC" ]
 			},
 			"date-iso": "2020-11-9",
-			"time_start": "2:30pm EST",
+			"time_start": "2:30pm",
 			"time_start-iso": "14:30-05:00",
-			"time_end": "6:30pm EST",
-			"time_end-iso": "18:30-05:00"
+			"time_end": "6:30pm",
+			"time_end-iso": "18:30-05:00",
+			"time_zone": "EST"
 		} ]
 	}, {
 		"date": "Tuesday, November 10",
@@ -88,10 +89,11 @@
 				"names": [ "Amit Ruhela", "Si Liu", "Victor Eijkhout", "Chun-Yaung Lu", "Lars Koesterke" ]
 			},
 			"date-iso": "2020-11-10",
-			"time_start": "2:30pm EST",
+			"time_start": "2:30pm",
 			"time_start-iso": "14:30-05:00",
-			"time_end": "6:30pm EST",
-			"time_end-iso": "18:30-05:00"
+			"time_end": "6:30pm",
+			"time_end-iso": "18:30-05:00",
+			"time_zone": "EST"
 		}, {
 			"url": "https://www.ddn.com/company/events/user-group-sc/",
 			"title": "2020 DDN Virtual User Group",
@@ -100,7 +102,7 @@
 				"names": [ "Alex Bouzari, DDN", "Paul Bloch, DDN", "Dean Hildebrand, Google", "Erik Deumens, University of Florida", "Tommy Minyard, TACC", "Craig Tierney, NVIDIA", "James Coomer, Sr. VP Products, DDN", "Sven Oehme, Chief Research Officer, DDN" ]
 			},
 			"date-iso": "2020-11-10",
-			"time_start": "11:30am EST",
+			"time_start": "11:30am EST (8:30am PST)",
 			"time_start-iso": "08:30-08:00"
 		} ]
 	}, {
@@ -116,10 +118,11 @@
 				"names": [ "Valeriu Codreanu, SURFsara", "Ian Foster, ANL-University of Chicago", "Zhao Zhang, TACC" ]
 			},
 			"date-iso": "2020-11-11",
-			"time_start": "10:00pm EST",
+			"time_start": "10:00pm",
 			"time_start-iso": "10:00-05:00",
-			"time_end": "6:30pm EST",
-			"time_end-iso": "18:30-05:00"
+			"time_end": "6:30pm",
+			"time_end-iso": "18:30-05:00",
+			"time_zone": "EST"
 		}, {
 			"should_prefix_title": true,
 			"type": "Workshop",
@@ -130,10 +133,11 @@
 				"names": [ "Nia Alexandrov, Hartree Centre, STFC", "Scott Lathrop, Shodor Education Foundation, University of Illlinois", "Nitin Sukhija, Slippery Rock University of Pennsylvania" ]
 			},
 			"date-iso": "2020-11-11",
-			"time_start": "10:00pm EST",
+			"time_start": "10:00pm",
 			"time_start-iso": "10:00-05:00",
-			"time_end": "6:30pm EST",
-			"time_end-iso": "18:30-05:00"
+			"time_end": "6:30pm",
+			"time_end-iso": "18:30-05:00",
+			"time_zone": "EST"
 		} ]
 	}, {
 		"date": "Friday, November 13",
@@ -150,10 +154,11 @@
 				"names": [ "Richard Todd Evans" ]
 			},
 			"date-iso": "2020-11-13",
-			"time_start": "11:50pm EST",
+			"time_start": "11:50pm",
 			"time_start-iso": "11:50-05:00",
-			"time_end": "12:10pm EST",
-			"time_end-iso": "12:10-05:00"
+			"time_end": "12:10pm",
+			"time_end-iso": "12:10-05:00",
+			"time_zone": "EST"
 		} ]
 	}, {
 		"date": "Tuesday–Thursday, November 17–19, 2020",
@@ -181,10 +186,11 @@
 				"names": [ "Amit Ruhela", "Matthew Vaughn", "Stephen Harrell", "Gregory Zynda", "John Fonner", "Richard Todd Evans", "Tommy Minyard" ]
 			},
 			"date-iso": "2020-11-17",
-			"time_start": "1:00pm EST",
+			"time_start": "1:00pm",
 			"time_start-iso": "13:00-05:00",
-			"time_end": "1:30pm EST",
-			"time_end-iso": "13:30-05:00"
+			"time_end": "1:30pm",
+			"time_end-iso": "13:30-05:00",
+			"time_zone": "EST"
 		}, {
 			"should_prefix_title": false,
 			"type": "Paper",
@@ -196,10 +202,11 @@
 				"names": [ "S. Mahdieh Ghazimirsaeed", "Qinghua Zhou", "Amit Ruhela", "Mohammadreza Bayatpour", "Hari Subramoni", "Dhabaleswar K. (DK) Panda" ]
 			},
 			"date-iso": "2020-11-17",
-			"time_start": "3:00pm EST",
+			"time_start": "3:00pm",
 			"time_start-iso": "15:00-05:00",
-			"time_end": "3:30pm EST",
-			"time_end-iso": "15:30-05:00"
+			"time_end": "3:30pm",
+			"time_end-iso": "15:30-05:00",
+			"time_zone": "EST"
 		} ]
 	}, {
 		"date": "Wednesday, November 18",
@@ -216,10 +223,11 @@
 				"names": [ "Paul Navratil", "Estelle Dirand", "Hannah Ross", "Pascal Grosset", "Christiaan Gribble", "Peter Messmer, Jeff Amstutz" ]
 			},
 			"date-iso": "2020-11-18",
-			"time_start": "10:00am EST",
+			"time_start": "10:00am",
 			"time_start-iso": "10:00-05:00",
-			"time_end": "10:30am EST",
-			"time_end-iso": "10:30-05:00"
+			"time_end": "10:30am",
+			"time_end-iso": "10:30-05:00",
+			"time_zone": "EST"
 		}, {
 			"should_prefix_title": true,
 			"type": "Session",
@@ -230,10 +238,11 @@
 				"names": [ "Joseph A. Insley, Argonne National Laboratory (ANL)", "Northern Illinois University", "David Semeraro, Texas Advanced Computing Center (TACC)" ]
 			},
 			"date-iso": "2020-11-18",
-			"time_start": "1:00pm EST",
+			"time_start": "1:00pm",
 			"time_start-iso": "13:00-05:00",
-			"time_end": "2:30pm EST",
-			"time_end-iso": "2:30-05:00"
+			"time_end": "2:30pm",
+			"time_end-iso": "2:30-05:00",
+			"time_zone": "EST"
 		}, {
 			"should_prefix_title": false,
 			"type": "Posters, Scientific Visualization & Data Analytics Showcase",
@@ -246,10 +255,11 @@
 				"names": [ "Andrew Solis", "Gregory Foss", "Matias Frogoso", "Paul Navratil" ]
 			},
 			"date-iso": "2020-11-18",
-			"time_start": "1:25pm EST",
+			"time_start": "1:25pm",
 			"time_start-iso": "13:25-05:00",
-			"time_end": "1:38pm EST",
-			"time_end-iso": "18:38-05:00"
+			"time_end": "1:38pm",
+			"time_end-iso": "18:38-05:00",
+			"time_zone": "EST"
 		}, {
 			"should_prefix_title": false,
 			"type": "Posters, Scientific Visualization & Data Analytics Showcase",
@@ -262,10 +272,11 @@
 				"names": [ "Francesca Samsel", "Greg Abram" ]
 			},
 			"date-iso": "2020-11-18",
-			"time_start": "1:51pm EST",
+			"time_start": "1:51pm",
 			"time_start-iso": "13:51-05:00",
-			"time_end": "2:24pm EST",
-			"time_end-iso": "14:24-05:00"
+			"time_end": "2:24pm",
+			"time_end-iso": "14:24-05:00",
+			"time_zone": "EST"
 		} ]
 	}, {
 		"date": "Thursday, November 19",
@@ -280,10 +291,11 @@
 				"names": [ "J. Gregory Pauloski", "Zhao Zhang", "Lei Huang", "Weijia Xu", "Ian T. Foster" ]
 			},
 			"date-iso": "2020-11-19",
-			"time_start": "1:00pm EST",
+			"time_start": "1:00pm",
 			"time_start-iso": "13:00-05:00",
-			"time_end": "1:30pm EST",
-			"time_end-iso": "13:30-05:00"
+			"time_end": "1:30pm",
+			"time_end-iso": "13:30-05:00",
+			"time_zone": "EST"
 		} ]
 	} ]
 }
