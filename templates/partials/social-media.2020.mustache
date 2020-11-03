@@ -1,14 +1,60 @@
 <h1 class="sc-content__title">
-    Connect with TACC</h1>
+	Connect with TACC</h1>
 <article class="sc-media">
-    <h2 class="sc-content__sub-title sc-media__title">
-        YouTube Videos</h2>
-    <div class="embed">
+	<h2 class="sc-content__sub-title sc-media__title">
+		Zoom Backgrounds</h2>
+	<style id="o-gallery-styles" type="text/css">
+	/*
+	Gallery (Object)
+
+	A gallery of apps to launch, images to view, etc.
+
+	Markup:
+	<ul class="o-gallery">
+		<li>…</li>
+		<li>…</li>
+	</ul>
+	*/
+	/* WARN: Duplicated in:
+		- `stem-programs/code-at-tacc/cybersecurity`
+		- `stem-programs/code-at-tacc/cybersecurity-comptia`
+		- `epic/funders-and-project-partners`
+	*/
+	.o-gallery {
+		--grid-gap: 30px;
+		--min-item-width: 300px;
+
+		display: grid;
+		grid-gap: var(--grid-gap);
+		grid-template-columns: repeat(auto-fit, minmax(var(--min-item-width), 1fr));
+		justify-items: center;
+		align-items: center;
+	}
+	</style>
+	<style id="cybersecurity-unique-gallery-styles" type="text/css">
+	.o-gallery {
+		--grid-gap: 0.5em;
+		--min-item-width: 40%; /* between 2–3 items */
+	}
+	.o-gallery * {
+		width: 100%;
+		display: block;
+	}
+	</style>
+	<div class="o-gallery">
+		<a href="/documents/1084364/1923661/Zoom-BG-Frontera-2.jpg" title="Zoom background of Frontera #2" target="_blank"><img src="/documents/1084364/1923661/Zoom-BG-Frontera-2.thumb.jpg" alt="Zoom background of Frontera #2" /></a>
+		<a href="/documents/1084364/1923661/Zoom-BG-Frontera-3.jpg" title="Zoom background of Frontera #3" target="_blank"><img src="/documents/1084364/1923661/Zoom-BG-Frontera-3.thumb.jpg" alt="Zoom background of Frontera #3" /></a>
+		<a href="/documents/1084364/1923661/Zoom-BG-Stampede2.jpg" title="Zoom background of Stampede2" target="_blank"><img src="/documents/1084364/1923661/Zoom-BG-Stampede2.thumb.jpg" alt="Zoom background of Stampede2" /></a>
+		<a href="/documents/1084364/1923661/Zoom-BG-TACC.jpg" title="Zoom background of TACC" target="_blank"><img src="/documents/1084364/1923661/Zoom-BG-TACC.thumb.jpg" alt="Zoom background of TACC" /></a>
+	</div>
+	<h2 class="sc-content__sub-title sc-media__title">
+		Videos</h2>
+	<div class="embed">
 		<div class="embed-responsive embed-responsive-16by9">
 			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T8xd1W4C61Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
-    <h2 class="sc-content__sub-title sc-media__title">
-        Twitter Feed</h2>
-    <a class="twitter-timeline" href="https://twitter.com/TACC?ref_src=twsrc%5Etfw" data-tweet-limit="3">Tweets by TACC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<h2 class="sc-content__sub-title sc-media__title">
+		Twitter Feed</h2>
+	<a class="twitter-timeline" href="https://twitter.com/TACC?ref_src=twsrc%5Etfw" data-tweet-limit="3">Tweets by TACC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </article>
