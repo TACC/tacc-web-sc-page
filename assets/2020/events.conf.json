@@ -1,7 +1,7 @@
 {
 	"days": [ {
-		"date": "2015–2020",
-		"date-iso": "2015/2020",
+		"date": "2020",
+		"date-iso": "2020",
 		"events": [ {
 			"url": "https://sc20.supercomputing.org/submit/transparency-reproducibility-initiative/",
 			"title": "Transparency and Reproducibility Initiative",
@@ -9,24 +9,10 @@
 				"type": "Chairs",
 				"names": [ "Beth Plale, Indiana University", "Stephen Lien Harrell, Texas Advanced Computing Center", "Andrew Younge, Sandia National Laboratories", "Line Pouchard, Brookhaven National Laboratory", "Stephen Lien Harrell, Texas Advanced Computing Center", "Beth Plale, Indiana University" ]
 			},
-			"date-iso": "2015/2020"
+			"date-iso": "2020"
 		} ]
 	}, {
-		"date": "Wednesday, April 15, 2020",
-		"date-iso": "2020-04-15",
-		"events": [ {
-			"should_prefix_title": true,
-			"type": "Blog Post",
-			"url": "https://sc20.supercomputing.org/2020/04/15/sc20-student-cluster-reproducibility-committee-chooses-benchmark-wisely/",
-			"title": "Reproducibility Challenge and Journal",
-			"speakers": {
-				"type": "Authors",
-				"names": [ "Scott Michael", "Stephen Harrell" ]
-			},
-			"date-iso": "2020-04-15"
-		} ]
-	}, {
-		"date": "Thursday–Monday, November 5–9, 2020",
+		"date": "Thursday–Monday, November 5–9",
 		"date-iso": "2020-11-5/9",
 		"events": [ {
 			"url": "http://hackhpc.org/hpc/",
@@ -38,7 +24,7 @@
 			"date-iso": "2020-11-5/9"
 		} ]
 	}, {
-		"date": "Sunday–Wednesday, November 8–11, 2020",
+		"date": "Sunday–Wednesday, November 8–11",
 		"date-iso": "2020-11-8/11",
 		"events": [ {
 			"url": "https://studentclustercompetition.us/2020/Teams/Team09/index.html",
@@ -161,7 +147,7 @@
 			"time_zone": "EST"
 		} ]
 	}, {
-		"date": "Tuesday–Thursday, November 17–19, 2020",
+		"date": "Tuesday–Thursday, November 17–19",
 		"date-iso": "2020-11-17/19",
 		"events": [ {
 			"url": "https://sc20.supercomputing.org/exhibits/exhibitor-forum/",
@@ -180,7 +166,7 @@
 			"type": "State of Practice Talk",
 			"url": "https://sc20.supercomputing.org/presentation/?id=sotp120&sess=sess289",
 			"title": "State-of-Practice: Containerization on Petascale HPC Clusters",
-			"context": "In State of the Practice Reports of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC’20), 2020",
+			"context": "In State of the Practice Reports of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC’20)",
 			"speakers": {
 				"type": "Authors",
 				"names": [ "Amit Ruhela", "Matthew Vaughn", "Stephen Harrell", "Gregory Zynda", "John Fonner", "Richard Todd Evans", "Tommy Minyard" ]
