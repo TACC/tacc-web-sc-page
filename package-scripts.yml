@@ -96,4 +96,4 @@ scripts:
   report: echo "Copy relevant markup from './dist/'"
 
   # Delete temporary files
-  clean: echo 'dirty' # rm -f ./templates/partials/_*
+  clean: rm -f ./templates/partials/_*
