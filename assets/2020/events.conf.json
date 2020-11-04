@@ -7,7 +7,7 @@
 			"title": "Transparency and Reproducibility Initiative",
 			"speakers": {
 				"type": "Chairs",
-				"names": [ "Beth Plale, Indiana University", "Stephen Lien Harrell, Texas Advanced Computing Center", "Andrew Younge, Sandia National Laboratories", "Line Pouchard, Brookhaven National Laboratory", "Stephen Lien Harrell, Texas Advanced Computing Center", "Beth Plale, Indiana University" ]
+				"names": [ "Beth Plale, Indiana University", "Stephen Lien Harrell, TACC", "Andrew Younge, Sandia National Laboratories", "Line Pouchard, Brookhaven National Laboratory" ]
 			},
 			"date-iso": "2020"
 		} ]
@@ -20,6 +20,10 @@
 			"leader": {
 				"type": "Led by",
 				"name": "Jeaime Powell, TACC"
+			},
+			"speakers": {
+				"type": "Mentors & Staff",
+				"names": [ "Charlie Dey, TACC", "JoonYee Chuah, TACC", "Egdar Garza, TACC", "Melissa Pearson, TACC", "Anna Dabrowski, TACC" ]
 			},
 			"date-iso": "2020-11-5/9"
 		} ]
@@ -221,7 +225,7 @@
 			"title": "Scientific Visualization & Data Analytics Showcase",
 			"speakers": {
 				"type": "Session Chairs",
-				"names": [ "Joseph A. Insley, Argonne National Laboratory (ANL)", "Northern Illinois University", "David Semeraro, Texas Advanced Computing Center (TACC)" ]
+				"names": [ "Joseph A. Insley, Argonne National Laboratory (ANL)", "Northern Illinois University", "David Semeraro, TACC" ]
 			},
 			"date-iso": "2020-11-18",
 			"time_start": "1:00pm",
