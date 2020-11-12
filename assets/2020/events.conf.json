@@ -134,11 +134,11 @@
 		"date-iso": "2020-11-13",
 		"events": [ {
 			"should_prefix_title": true,
-			"type": "Paper",
-			"url": "",
-			"title": "Application Performance in the Frontera Acceptance Process",
-			"context": "Workshop: HPCSYSPROS20",
-			"context_url": "http://sighpc-syspros.org/workshops/2020/",
+			"type": "Workshop",
+			"url": "http://sighpc-syspros.org/workshops/2020/",
+			"title": "HPCSYSPROS20",
+			"context": "Paper: Application Performance in the Frontera Acceptance Process",
+			"context_url": "",
 			"speakers": {
 				"type": "Author",
 				"names": [ "Richard Todd Evans" ]
