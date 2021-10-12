@@ -14,7 +14,7 @@ This project creates markup for the body of TACC's SC pages:
     - `events.*.json`
 2. Run build script:
     - __either__ `npm run build` to build everything
-    - __or__ `npm run start …` to get a list of commands for build pieces
+    - __or__ `npm run start …` to get a list of commands to build pieces
 
         <details><summary>Examples</summary>
 
