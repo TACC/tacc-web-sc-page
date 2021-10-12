@@ -1,8 +1,11 @@
 # TACC Website Jobs Page
 
-This project compiles data into templates to create markup for the body of the [SC2019 standalone webpage][tacc-sc19].
+This project creates markup for the body of TACC's SC pages:
+- [SC2019](https://www.tacc.utexas.edu/sc19 "TACC: Super Computing 2019")
+- [SC2020](https://www.tacc.utexas.edu/sc20 "TACC: Super Computing 2020")
+- (coming soon) [SC2021](https://www.tacc.utexas.edu/sc21 "TACC: Super Computing 2021")
 
-[tacc-sc19]: https://www.tacc.utexas.edu/sc19 "TACC: Super Computing 2019"
+<details>It compiles data and templates to create markup to which raw markup is also appended.</details>
 
 ## Usage
 
@@ -10,7 +13,24 @@ This project compiles data into templates to create markup for the body of the [
     - `*.mustache/`
     - `events.*.json`
 2. Run build script:
-    - `npm run build`
+    - __either__ `npm run build` to build everything
+    - __or__ `npm run start …` to get a list of commands for build pieces
+
+        <details><summary>Examples</summary>
+
+        - `npm run start build:2021`
+
+            would build all the 2021 page markup (to `dist/`)
+
+        - `npm run start build:2020:partials`
+
+            would build some of the 2020 markup (__not__ to `dist/`)
+
+        - `npm run start build:2019:partials:styles`
+
+            would build only the 2019 `<style />` markup (__not__ to `dist/`)
+
+        </details>
 3. Confirm output in:
     - `dist/`
 4. Use output.
